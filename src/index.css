@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+  
+  --color-bg-main: #07080a;
+  --color-bg-card: #13161c;
+  --color-bg-surface: #1a1e27;
+  --color-accent-lime: #c8f56a;
+  --color-accent-teal: #7dd9b8;
+  --color-accent-amber: #f0c46a;
+  --color-accent-purple: #b8a0f0;
+}
+
+@layer utilities {
+  .hero-glow-1 {
+    background: radial-gradient(ellipse at center, rgba(200, 245, 106, 0.08) 0%, transparent 70%);
+  }
+  .hero-glow-2 {
+    background: radial-gradient(ellipse at center, rgba(125, 217, 184, 0.06) 0%, transparent 70%);
+  }
+}
+
+/* Custom fade scrollbar styling for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #07080a;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a1e27;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #222733;
+}
+
+/* MARQUEE CONTINUOUS LOOPING ANIMATIONS */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-loop {
+  display: flex;
+  width: max-content;
+  animation: marqueeScroll 45s linear infinite;
+}
+
+.animate-marquee-loop:hover {
+  animation-play-state: paused;
+}
+
