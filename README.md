@@ -3,6 +3,26 @@
 EduVerse is a full-stack, modular learning platform powered by React, TypeScript, Tailwind CSS, Express, and Google Gemini. The application is built to accommodate college-level science study through integrated document OCR ingestion simulations, adaptive explanation tuning, spaced-repetition math scheduling via the SM-2 cognitive algorithm, and dynamic dependency mapping of academic concepts.
 
 ---
+<img width="2879" height="1163" alt="Screenshot 2026-05-26 192149" src="https://github.com/user-attachments/assets/c7ba4b32-4c15-4838-b48a-5db74237228d" />
+
+<img width="2823" height="1390" alt="Screenshot 2026-05-26 192205" src="https://github.com/user-attachments/assets/c9893546-75e9-461e-aa3b-f06fae73c695" />
+
+<img width="2876" height="1160" alt="Screenshot 2026-05-26 192219" src="https://github.com/user-attachments/assets/fa124f91-9259-4065-8ace-d0ad5d7793f6" />
+
+<img width="2725" height="1242" alt="Screenshot 2026-05-26 192235" src="https://github.com/user-attachments/assets/90e53c78-3adb-48b8-9d5b-02d121fb998b" />
+
+<img width="2822" height="1485" alt="Screenshot 2026-05-26 192249" src="https://github.com/user-attachments/assets/dc072ddf-b97d-4a2f-98e7-4c6967846df7" />
+
+<img width="2759" height="1468" alt="Screenshot 2026-05-26 192302" src="https://github.com/user-attachments/assets/190452bc-18eb-45f6-a0fe-1374fb588780" />
+
+<img width="2862" height="1136" alt="Screenshot 2026-05-26 192315" src="https://github.com/user-attachments/assets/0bc905b2-b4ab-4d5e-ae31-b4f2e2b9cfcf" />
+
+<img width="2853" height="999" alt="Screenshot 2026-05-26 192327" src="https://github.com/user-attachments/assets/9fc6411f-4655-426f-9f92-c11e7a908f5c" />
+
+<img width="2876" height="1083" alt="Screenshot 2026-05-26 192340" src="https://github.com/user-attachments/assets/bbdec4a0-d0d9-4986-87f7-ef426431906e" />
+
+<img width="2785" height="1483" alt="Screenshot 2026-05-26 192358" src="https://github.com/user-attachments/assets/7a4c3cc3-04a6-4993-a442-63f220f35d03" />
+
 
 ## Technical Overview
 
@@ -86,21 +106,3 @@ npm start
 
 ---
 
-## Deployment Strategy
-
-EduVerse can be deployed to web hosting providers in under five minutes.
-
-### Static SPA Providers (Render, Vercel, Netlify)
-If running purely as a static frontend application:
-1. Push the code to a GitHub repository.
-2. Connect the repository to Vercel, Netlify, or Render.
-3. Configure the **Build Command** to: `npm run build`
-4. Configure the **Output Directory** to: `dist`
-5. If utilizing a client-side environment key, pass `VITE_GEMINI_API_KEY` through the provider's Environment Variables panel.
-
-### Full-Stack Servers (Render Web Service, Cloud Run)
-To run both backend server endpoints and the compiled client files synchronously:
-1. Ensure the port environment variable dynamically maps to `PORT` on the hosting container.
-2. Configure **Build Command** to: `npm run build`
-3. Configure the **Start Command** to: `npm run start` (which fires `node dist/server.cjs`).
-4. Set the `GEMINI_API_KEY` securely in the provider's secret configuration dashboard.
