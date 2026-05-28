@@ -104,5 +104,8 @@ npm run build
 npm start
 ```
 
+## LICENSE
+MIT License
+
 ---
 
