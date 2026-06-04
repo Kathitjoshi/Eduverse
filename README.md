@@ -1,4 +1,4 @@
-# EduVerse Application Documentation
+# EduVerse  Application Documentation
 
 EduVerse is a full-stack, modular learning platform powered by React, TypeScript, Tailwind CSS, Express, and Google Gemini. The application is built to accommodate college-level science study through integrated document OCR ingestion simulations, adaptive explanation tuning, spaced-repetition math scheduling via the SM-2 cognitive algorithm, and dynamic dependency mapping of academic concepts.
 
